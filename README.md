@@ -1,6 +1,8 @@
+[![Logo Infranalytics](img/INFRANALYTICS-logo.png)](https://infranalytics.fr/)
+
 # HAL Infranalytics
 
-Scripts Python pour récupérer les publications de l'infrastructure de recherche **Infranalytics** via l'[API HAL](https://api.archives-ouvertes.fr/search/) et les exporter en différents formats.
+Scripts Python pour récupérer les publications de l'infrastructure de recherche **[Infranalytics](https://infranalytics.fr/)** via l'[API HAL](https://api.archives-ouvertes.fr/search/) et les exporter en différents formats.
 
 ## Prérequis
 
@@ -83,6 +85,8 @@ Les deux scripts partagent les mêmes constantes de configuration en tête de fi
 hal_infra/
 ├── hal_infra.py          # Export CSV + JSON
 ├── infralatex.py         # Export LaTeX
+├── img/
+│   └── INFRANALYTICS-logo.png
 └── tests/
     ├── test_infranalytics_hal.py
     └── test_infralatex.py
@@ -94,3 +98,7 @@ hal_infra/
 pip install pytest
 pytest tests/
 ```
+
+## Licence
+
+Ce projet est distribué sous licence [CeCILL-2.1](https://cecill.info/licences/Licence_CeCILL_V2.1-fr.html), licence française open source compatible avec la GPL, recommandée pour les logiciels issus de la recherche publique française.
