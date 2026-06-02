@@ -66,39 +66,6 @@ Au sein de chaque section, les publications sont triées de la plus récente (en
 pdflatex infranalytics_publi.tex
 ```
 
-## Configuration
-
-Les deux scripts partagent les mêmes constantes de configuration en tête de fichier :
-
-| Constante | Rôle |
-|---|---|
-| `IR_ACRONYM` | Acronyme exact tel qu'enregistré dans le référentiel HAL |
-| `FIELDS` | Champs Solr HAL récupérés par document |
-| `ROWS_PER_PAGE` | Taille de pagination des requêtes API (défaut : 100) |
-
-> **Important :** `IR_ACRONYM` est sensible à la casse et doit correspondre exactement à la valeur dans le référentiel HAL. Pour vérifier :
-> `https://api.archives-ouvertes.fr/ref/metadatalist/?metaName_s=ir`
-
-## Structure du projet
-
-```
-hal_infra/
-├── hal_infra.py          # Export CSV + JSON
-├── infralatex.py         # Export LaTeX
-├── img/
-│   └── INFRANALYTICS-logo.png
-└── tests/
-    ├── test_infranalytics_hal.py
-    └── test_infralatex.py
-```
-
-## Tests
-
-```bash
-pip install pytest
-pytest tests/
-```
-
 ## Licence
 
 Ce projet est distribué sous licence [CeCILL-2.1](https://cecill.info/licences/Licence_CeCILL_V2.1-fr.html), licence française open source compatible avec la GPL, recommandée pour les logiciels issus de la recherche publique française.
